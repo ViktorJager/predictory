@@ -1,0 +1,57 @@
+# Python specific
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+venv/
+
+# IDE specific
+.vscode/
+*.code-workspace
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.exe
+*.out
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Other
+*.bak
+*.swp
+*.tmp
+*.tmp.*
+*~

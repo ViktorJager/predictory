@@ -1,0 +1,16 @@
+API:
+https://api.alternative.me/fng/?limit=0&format=csv
+
+Info:
+https://www.lookintobitcoin.com/charts/bitcoin-fear-and-greed-index/
+
+Data Source Inputs For Generating The Fear and Greed Index Chart
+The inputs for the Fear and Greed Index are generated every day from several different sources. Each one is relevant in its own way and contributes to a greedy definition and to help define fear within the greed and fear index.
+
+They include:
+
+Current volatility of $BTC price action, relative to the last 30 days and 90 days. Exceptional increases in volatility can sometimes be a sign of an overly fearful market.
+Momentum and Volume, relative to the last 30 days and 90 days. Exceptionally high buying volume on a relative basis can indicate that the market is becoming overly greedy.
+Social media sentiment analysis looking at sentiment type and volume at a given time relative to historical norms.
+Dominance of Bitcoin relative to other cryptocurrencies.
+Google Trends across a range of relevant Bitcoin search terms to identify strong periods of growth or decline in Google Search.
