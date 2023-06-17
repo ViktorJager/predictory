@@ -1,3 +1,1 @@
-# predictory
-
-🛠
+# 🛠 predictory
