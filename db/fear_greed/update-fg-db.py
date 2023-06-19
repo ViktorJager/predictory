@@ -3,10 +3,8 @@ import csv
 import sqlite3
 from datetime import date, timedelta, datetime
 
-from config.db_config import FG_DB_NAME
+from config.db_config import FG_DB_NAME, DATE_PATTERN
 
-
-date_pattern = "%Y-%m-%d"
 
 # Connect to the database
 connection = sqlite3.connect(f"./db/{FG_DB_NAME}/{FG_DB_NAME}.sqlite")
@@ -22,14 +20,14 @@ today = date.today()
 date_list = []
 
 # Check if the last entry is not today's date
-if last_entry and last_entry[0] != today.strftime(date_pattern):
+if last_entry and last_entry[0] != today.strftime(DATE_PATTERN):
     # Get the date from the last entry
-    last_date = datetime.strptime(last_entry[0], date_pattern).date()
+    last_date = datetime.strptime(last_entry[0], DATE_PATTERN).date()
 
     # Generate a list of dates between last_date and today
     current_date = last_date + timedelta(days=1)
     while current_date <= today:
-        date_list.append(current_date.strftime(date_pattern))
+        date_list.append(current_date.strftime(DATE_PATTERN))
         current_date += timedelta(days=1)
 
 else:
@@ -72,7 +70,7 @@ def filter_csv(data):
 
     for entry in data:
         date_str = entry[0]
-        new_date = datetime.strptime(date_str, "%d-%m-%Y").strftime(date_pattern)
+        new_date = datetime.strptime(date_str, "%d-%m-%Y").strftime(DATE_PATTERN)
         modified_entry = [new_date, entry[1]]  # Exclude the third entry
         new_date_list.append(modified_entry)
     return new_date_list

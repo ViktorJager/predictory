@@ -1,6 +1,7 @@
 # Python specific
 *.pyc
 __pycache__/
+api_keys.py
 
 # Virtual environment
 venv/

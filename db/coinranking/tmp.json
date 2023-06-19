@@ -1,0 +1,58 @@
+{
+    "status": "success",
+    "data": {
+        "referenceCurrencyRate": 1,
+        "totalCoins": 26551,
+        "totalMarkets": 36241,
+        "totalExchanges": 162,
+        "totalMarketCap": "1077931086147",
+        "total24hVolume": "24956857806",
+        "btcDominance": 47.79293633783787,
+        "bestCoins": [
+            {
+                "uuid": "TWSgvFmNR",
+                "symbol": "SFP",
+                "name": "SafePal",
+                "iconUrl": "https://cdn.coinranking.com/QvuQzzqRV/safepal.png",
+                "coinrankingUrl": "https://coinranking.com/coin/TWSgvFmNR+safepal-sfp"
+            },
+            {
+                "uuid": "mMPrMcB7",
+                "symbol": "STX",
+                "name": "Stacks",
+                "iconUrl": "https://cdn.coinranking.com/9gM7CG7Gp/4847.png",
+                "coinrankingUrl": "https://coinranking.com/coin/mMPrMcB7+stacks-stx"
+            },
+            {
+                "uuid": "qFakph2rpuMOL",
+                "symbol": "MKR",
+                "name": "Maker",
+                "iconUrl": "https://cdn.coinranking.com/sjHfS7jCS/mkrdao.svg",
+                "coinrankingUrl": "https://coinranking.com/coin/qFakph2rpuMOL+maker-mkr"
+            }
+        ],
+        "newestCoins": [
+            {
+                "uuid": "qzJ8ZzTOx",
+                "symbol": "AI",
+                "name": "AiDoge",
+                "iconUrl": "https://cdn.coinranking.com/z3GlZbEDa/K0a_Qyot_400x400.PNG",
+                "coinrankingUrl": "https://coinranking.com/coin/qzJ8ZzTOx+aidoge-ai"
+            },
+            {
+                "uuid": "udQY9DoxDk",
+                "symbol": "SAW",
+                "name": "SAW",
+                "iconUrl": "https://cdn.coinranking.com/NfucOpRP2/1_20230615013144.PNG",
+                "coinrankingUrl": "https://coinranking.com/coin/udQY9DoxDk+saw-saw"
+            },
+            {
+                "uuid": "g2I6Dp3et",
+                "symbol": "BM",
+                "name": "Bullishman",
+                "iconUrl": "https://cdn.coinranking.com/Rg6vW4QjX/1_20230615013658.PNG",
+                "coinrankingUrl": "https://coinranking.com/coin/g2I6Dp3et+bullishman-bm"
+            }
+        ]
+    }
+}

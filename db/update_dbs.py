@@ -4,6 +4,7 @@ from time import sleep
 import requests
 from config.logger_setup import setup_logger
 from datetime import date, timedelta, datetime
+from db.coinranking.coinranking import update_coinranking_db
 
 from config.db_config import COIN_DB_NAMES, DATE_PATTERN, FG_DB_NAME
 
@@ -25,6 +26,8 @@ def update_other_dbs(db):
 
     if date_list:
         update_fg_db(db, date_list)
+
+    update_coinranking_db()
 
 
 def missing_dates(db):
@@ -141,7 +144,7 @@ def update_fg_db(db, date_list):
                         f"INSERT INTO {db} (date, value) VALUES (?, ?)",
                         (this_date, value),
                     )
-                    logger.info(f"Added row: {this_date} {value}")
+                    logger.info(f"Added row in fear greed: {this_date} {value}")
                     break
 
     connection.commit()

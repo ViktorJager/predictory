@@ -3,6 +3,9 @@ import csv
 import datetime
 import sqlite3
 
+from config.db_config import DATE_PATTERN
+
+
 url = "https://api.alternative.me/fng/"
 params = {
     "limit": "0",
@@ -39,7 +42,7 @@ def filter_csv(data):
 
     for entry in data:
         date_str = entry[0]
-        new_date = datetime.datetime.strptime(date_str, '%d-%m-%Y').strftime('%Y-%m-%d')
+        new_date = datetime.datetime.strptime(date_str, '%d-%m-%Y').strftime(DATE_PATTERN)
         modified_entry = [new_date, entry[1]]  # Exclude the third entry
         new_date_list.append(modified_entry)
     return new_date_list

@@ -6,5 +6,6 @@ COIN_DB_NAMES = {
 }
 
 FG_DB_NAME = "fear_greed"
+COINRANKING_DB_NAME ="coinranking"
 
 DATE_PATTERN = "%Y-%m-%d"
